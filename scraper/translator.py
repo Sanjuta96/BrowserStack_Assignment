@@ -1,8 +1,9 @@
-from deep_translator import GoogleTranslator
+def translate_with_api(text):
+    # MOCK TRANSLATION — swap later with real API
+    return text + " (EN)"
 
 def translate_titles(articles):
-    for article in articles:
-        translation = GoogleTranslator(source='es', target='en').translate(article['title_es'])
-        article['title_en'] = translation
-        print(f"\nOriginal: {article['title_es']}\nTranslated: {article['title_en']}")
-    return articles
+    return [
+        {**art, "title_en": translate_with_api(art["title_es"])}
+        for art in articles
+    ]
