@@ -1,0 +1,5 @@
+# config.py - DO NOT push this file to GitHub!
+
+BROWSERSTACK_USERNAME = 'sanjutatidke_Yb6puF'
+BROWSERSTACK_ACCESS_KEY = 'pso4Bbe1vcgpt9z4xwM4'
+
